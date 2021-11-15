@@ -1,15 +1,10 @@
 package per.tang.business.order;
 
 import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
-import org.springframework.beans.BeansException;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 
@@ -18,9 +13,8 @@ import java.io.IOException;
 @SpringBootApplication
 @EnableDubbo
 @EnableDiscoveryClient
-@PropertySource("classpath:/bootstrap.properties")
 public class OrderControlApplication{
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         //springweb
         SpringApplication.run(OrderControlApplication.class);
     }

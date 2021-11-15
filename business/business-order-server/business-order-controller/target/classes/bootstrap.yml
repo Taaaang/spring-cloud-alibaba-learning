@@ -1,0 +1,20 @@
+#应用名称
+spring:
+  application:
+    name: business-order-control
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: dev
+        file-extension: properties
+        shared-configs:
+          - data-id: business-order-control.properties
+            refresh: true
+          - data-id: dubbo-order-control.properties
+            refresh: true
+    sentinel:
+      transport:
+        port: 9999
+        dashboard: 192.168.0.103:9090
+

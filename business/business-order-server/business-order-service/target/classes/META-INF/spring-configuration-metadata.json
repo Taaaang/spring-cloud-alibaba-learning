@@ -1,0 +1,61 @@
+{
+  "groups": [
+    {
+      "name": "spring.cloud.sentinel.datasource.degrade.nacos",
+      "type": "per.tang.business.order.config.NacosDegradeRuleConfiguration",
+      "sourceType": "per.tang.business.order.config.NacosDegradeRuleConfiguration"
+    },
+    {
+      "name": "spring.cloud.sentinel.datasource.flow.nacos",
+      "type": "per.tang.business.order.config.NacosFlowRuleConfiguration",
+      "sourceType": "per.tang.business.order.config.NacosFlowRuleConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.cloud.sentinel.datasource.degrade.nacos.data-id",
+      "type": "java.lang.String",
+      "sourceType": "per.tang.business.order.config.NacosDegradeRuleConfiguration"
+    },
+    {
+      "name": "spring.cloud.sentinel.datasource.degrade.nacos.group-id",
+      "type": "java.lang.String",
+      "sourceType": "per.tang.business.order.config.NacosDegradeRuleConfiguration",
+      "defaultValue": "SENTINEL_CONFIG"
+    },
+    {
+      "name": "spring.cloud.sentinel.datasource.degrade.nacos.namespace",
+      "type": "java.lang.String",
+      "sourceType": "per.tang.business.order.config.NacosDegradeRuleConfiguration",
+      "defaultValue": "dev"
+    },
+    {
+      "name": "spring.cloud.sentinel.datasource.degrade.nacos.serveraddr",
+      "type": "java.lang.String",
+      "sourceType": "per.tang.business.order.config.NacosDegradeRuleConfiguration"
+    },
+    {
+      "name": "spring.cloud.sentinel.datasource.flow.nacos.data-id",
+      "type": "java.lang.String",
+      "sourceType": "per.tang.business.order.config.NacosFlowRuleConfiguration"
+    },
+    {
+      "name": "spring.cloud.sentinel.datasource.flow.nacos.group-id",
+      "type": "java.lang.String",
+      "sourceType": "per.tang.business.order.config.NacosFlowRuleConfiguration",
+      "defaultValue": "SENTINEL_CONFIG"
+    },
+    {
+      "name": "spring.cloud.sentinel.datasource.flow.nacos.namespace",
+      "type": "java.lang.String",
+      "sourceType": "per.tang.business.order.config.NacosFlowRuleConfiguration",
+      "defaultValue": "dev"
+    },
+    {
+      "name": "spring.cloud.sentinel.datasource.flow.nacos.serveraddr",
+      "type": "java.lang.String",
+      "sourceType": "per.tang.business.order.config.NacosFlowRuleConfiguration"
+    }
+  ],
+  "hints": []
+}

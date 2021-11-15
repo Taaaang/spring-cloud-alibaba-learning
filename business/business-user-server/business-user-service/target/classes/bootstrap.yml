@@ -1,0 +1,19 @@
+#应用名称
+spring:
+  application:
+    name: business-user-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: dev
+        file-extension: properties
+        shared-configs:
+          - data-id: business-user-service.properties
+            refresh: true
+          - data-id: dubbo-user.properties
+            refresh: true
+    sentinel:
+      transport:
+        port: 8700
+        dashboard: localhost:9090

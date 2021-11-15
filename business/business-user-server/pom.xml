@@ -7,10 +7,11 @@
         <groupId>org.example</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>business-user-server</artifactId>
-    <packaging>pom</packaging>
+
 
     <modules>
         <module>business-user-api</module>

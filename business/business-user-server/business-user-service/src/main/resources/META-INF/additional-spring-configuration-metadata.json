@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "spring.cloud.sentinel.transport.port",
+      "type": "java.lang.String",
+      "description": "Description for spring.cloud.sentinel.transport.port."
+    },
+    {
+      "name": "spring.cloud.sentinel.transport.port",
+      "type": "java.lang.String",
+      "description": "Description for spring.cloud.sentinel.transport.port."
+    }
+  ] }

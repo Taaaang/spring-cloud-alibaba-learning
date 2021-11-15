@@ -1,0 +1,36 @@
+#应用名称
+spring:
+  application:
+    name: business-order-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: dev
+        file-extension: properties
+        shared-configs:
+          - data-id: business-order-service.properties
+            refresh: true
+          - data-id: dubbo-order.properties
+            refresh: true
+    sentinel:
+      transport:
+        port: 8701
+        dashboard: localhost:9090
+      datasource:
+        flow:
+          nacos:
+            serveraddr: ${spring.cloud.nacos.config.server-addr}
+            dataId: ${spring.application.name}_FLOW_SENTINEL_DATA
+            groupId: SENTINEL_CONFIG
+            namespace: ${spring.cloud.nacos.config.namespace}
+            data-type: json
+            rule-type: flow
+        degrade:
+          nacos:
+            serveraddr: ${spring.cloud.nacos.config.server-addr}
+            dataId: ${spring.application.name}_DEGRADE_SENTINEL_DATA
+            groupId: SENTINEL_CONFIG
+            namespace: ${spring.cloud.nacos.config.namespace}
+            data-type: json
+            rule-type: degrade
